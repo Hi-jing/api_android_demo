@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:filterTouchesWhenObscured="true">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_course_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_layout"
+                android:layout_marginTop="55dp"
+                android:gravity="center">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="60dp"
+                    android:maxLength="20"
+                    android:text="课程名称:"
+                    android:paddingLeft="55dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/name_txt"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="60dp"
+                    android:maxLength="20"
+                    android:paddingLeft="155dp"/>
+
+        </FrameLayout>
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_layout"
+                android:layout_below="@id/name_layout"
+                android:layout_marginTop="6dp"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:maxLength="20"
+                    android:text="任课老师:"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="60dp"/>
+            <TextView
+                    android:id="@+id/teacher_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:maxLength="20"
+                    android:paddingLeft="155dp"
+                    android:paddingRight="60dp"/>
+
+        </FrameLayout>
+
+        <Button
+                android:id="@+id/to_add_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="#ff336699"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="去添加一个"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
